@@ -3,36 +3,81 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>a bueno intro</title>
+    <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello everyone!</h1>
-    <section>
-        <p> I'm Julia and I am Queens-based New Yorker studying in Baruch as a Computer Science major with a minor in Mathematics. </p>
-            <div class="fun-facts">
-                <ol class="list-group list-group-numbered">
-                    <li class="list-group-item">I have a tuxedo cat named Cookie that I took in from the streets 🐈‍⬛ 🐾</li>
-                    <li class="list-group-item">My mom and I are both Geminis ♊️</li>
-                    <li class="list-group-item">Current food obsession is raw seafood (I love omakase!!!)</li>
-                    <li class="list-group-item">I have a big passion for the arts and I do film photography for fun using a Honeywell Pentax Spotmatic in 35mm</li>
+    <!--favicon-->
+    <link rel="icon" href="images/smileyface-icon.png" type="image/png">
+    <!--css sheet-->
+    <link rel="stylesheet" href="styles.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+  <body class="josefin-sans-body">
+    <h1 class="greeting bitcount-grid-double-title">Hello everyone!</h1>
+    <section class="section-one">
+        <p id="intro"> I'm Julia and I am Queens-based New Yorker studying @ Baruch as a Computer Science major with a minor in Mathematics. </p>
+            <div>
+                <ol>
+                    <li>I have a tuxedo cat named Cookie that I took in with my gf from the streets 🐈‍⬛ 🐾</li>
+                    <li>My mom and I are both Geminis ♊️</li>
+                    <li>Current food obsession is raw seafood (I love omakase!!!)</li>
+                    <li>I love taking film photos for fun using a Honeywell Pentax Spotmatic in 35mm</li>
                 </ol>
             </div>
-                <div class="film">
+                <div class="film carousel-wrapper mx-auto">
                 <!-- add carousel of film photos (4-6 photos in total)-->
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="images/me.jpeg" class="d-block w-100" alt="baby photo with dad">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>me</p>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/car-dad.jpeg" class="d-block w-100" alt="baby photo with dad">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>a baby photo with my dad driving his car</p>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/cancun.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>view from our hotel in cancun</p>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/sf.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>chinatown in SF</p>
+                        </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
                 </div>
     
     </section>
+   
+<!--maybe add a zodiac quiz-->
 
     <section>
-        <!-- 
-        I'd love to guess everyones' zodiac sign for fun!
-        add zodiac pop quiz 
-        -->
-    </section>
-    
-    <section>
-        <h3>I'm super excited to further hone my craft during my time in this class. </h3>
+        <h3 class="greeting bitcount-grid-double-title">I'm super excited to further hone my craft during my time in this class. </h3>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

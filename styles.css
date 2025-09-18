@@ -1,0 +1,46 @@
+.greeting {
+    text-align: center;
+}
+
+#intro {
+    text-align: center;
+}
+
+body {
+    background-color: #f0ead2;
+}
+
+.section-one {
+    background-color: #dde5b6;
+}
+
+#ending {
+    text-align: center;
+}
+
+
+.bitcount-grid-double-title {
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+.carousel-wrapper {
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+}
+
+.josefin-sans-body {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
