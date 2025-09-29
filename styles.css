@@ -10,6 +10,16 @@ body {
     background-color: #f0ead2;
 }
 
+footer {
+    text-align: center;
+    background-color: #adc178;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
 .section-one {
     background-color: #dde5b6;
 }
